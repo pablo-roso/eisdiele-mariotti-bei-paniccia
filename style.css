@@ -212,6 +212,25 @@ p {
   max-width: 480px;
 }
 
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.1rem;
+}
+
+.hero-rating-stars {
+  color: var(--apricot-deep);
+  letter-spacing: 0.05em;
+  font-size: 1.1rem;
+}
+
+.hero-rating-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
