@@ -1,220 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Eisdiele Mariotti bei Paniccia — Traditions-Eiscafé in Freiburg</title>
-<meta name="description" content="Eisdiele Mariotti bei Paniccia — hausgemachtes Eis und gemütliches Ambiente in der Kronenstraße 9, Freiburg im Breisgau. Website-Entwurf." />
+<title>Eisdiele Mariotti bei Paniccia — Kronenstraße 9, Freiburg-Wiehre</title>
+<meta name="description" content="Eisdiele Mariotti bei Paniccia, Kronenstraße 9 in der Freiburger Wiehre: bis zu 24 wechselnde Sorten täglich nach einem über 50 Jahre alten Familienrezept, dazu vegane und glutenfreie Fruchtsorten." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Assistant:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232c3230'/%3E%3Ccircle cx='16' cy='11' r='7' fill='%23c73a5a'/%3E%3Cpath d='M9 15h14l-7 13z' fill='%23f2e7cf'/%3E%3C/svg%3E" />
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav">
-    <a href="#top" class="brand">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M32 6c9 0 16.5 6.8 17.6 15.6H14.4C15.5 12.8 23 6 32 6Z" fill="#ff8c5a"/>
-        <circle cx="24" cy="18" r="9" fill="#ffb599"/>
-        <circle cx="38" cy="16" r="9" fill="#2ec4b6"/>
-        <path d="M18 26h28l-9.5 30a4 4 0 0 1-3.9 3h-1.2a4 4 0 0 1-3.9-3L18 26Z" fill="#ffecd1" stroke="#f06d3b" stroke-width="2"/>
-        <path d="M20 30h24M21.5 36h21M23 42h18" stroke="#f06d3b" stroke-width="1.4" opacity="0.55"/>
+<a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Eisdiele Mariotti bei Paniccia — Start">
+      <svg class="brand-mark" viewBox="0 0 32 40" fill="none" aria-hidden="true">
+        <circle cx="16" cy="12" r="8.4" fill="currentColor" />
+        <circle cx="8.6" cy="16" r="6" fill="#8fbf9a" />
+        <circle cx="23.4" cy="16" r="6" fill="#f2e7cf" />
+        <path d="M4 20h24L16 39z" fill="#d9a75c" />
       </svg>
-      <span class="brand-name">Mariotti bei Paniccia</span>
+      <span class="brand-text">
+        <span class="brand-name">Mariotti</span>
+        <span class="brand-sub">bei Paniccia · Kronenstraße 9</span>
+      </span>
     </a>
-    <a href="#kontakt" class="btn btn-primary nav-cta">Kontakt</a>
-  </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#tafel">Die Tafel</a></li>
+        <li><a href="#rezept">Das Rezept</a></li>
+        <li><a href="#alle">Für alle</a></li>
+        <li><a href="#kontakt">Vorbeikommen</a></li>
+      </ul>
+    </nav>
+
+    <span class="header-status" id="headerStatus" hidden></span>
+  </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <!-- ================= HERO ================= -->
+  <!-- ================= HERO =================
+       In Freiburg sagt man: Wenn die Eisdiele in der Kronenstraße
+       aufmacht, ist Sommer. Dieser Satz stand im alten Entwurf mitten
+       im Fließtext — er ist die ganze Positionierung. -->
   <section class="hero">
-    <div class="container hero-inner">
+    <div class="wrap hero-inner">
       <div class="hero-copy">
-        <span class="hero-eyebrow">Willkommen in der</span>
-        <h1>Eisdiele Mariotti <span>bei Paniccia</span></h1>
-        <p class="hero-lede">
-          Hausgemachtes Eis, ehrliches Handwerk und ein Stück italienisches
-          Lebensgefühl mitten in Freiburg — für alle, die Eis genießen wie
-          früher.
+        <p class="eyebrow">Kronenstraße 9 · Freiburg-Wiehre · seit 2001</p>
+        <h1>Wenn wir aufmachen,<br />ist in Freiburg <em>Sommer.</em></h1>
+        <p class="hero-lead">
+          Das sagen nicht wir, das sagt die Wiehre. Wir machen nur das Eis
+          dazu — nach einem Familienrezept, das älter ist als die meisten
+          Stammgäste, und in bis zu vierundzwanzig Sorten, die täglich wechseln.
         </p>
-        <div class="hero-rating">
-          <span class="hero-rating-stars" aria-hidden="true">★★★★★</span>
-          <span class="hero-rating-text">4,6 von 5 · Google-Bewertungen</span>
+
+        <div class="season-badge" id="seasonBadge" hidden>
+          <span class="season-dot" aria-hidden="true"></span>
+          <span id="seasonText"></span>
         </div>
+
         <div class="hero-actions">
-          <a href="#kontakt" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
-          <a href="#ueber-uns" class="btn btn-outline">Mehr erfahren</a>
+          <a class="btn btn-primary" href="#tafel">Die Tafel ansehen</a>
+          <a class="btn btn-outline" href="tel:+497617075061">Anrufen</a>
         </div>
+
+        <p class="hero-rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <strong>4,6 von 5</strong> · öffentliche Google-Bewertungen
+        </p>
       </div>
-      <div class="hero-art">
-        <div class="hero-blob blob-1"></div>
-        <div class="hero-blob blob-2"></div>
-        <svg viewBox="0 0 220 260" aria-hidden="true">
-          <ellipse cx="110" cy="248" rx="46" ry="8" fill="#3a2b23" opacity="0.08"/>
-          <path d="M110 40c34 0 62 24.6 66 56H44c4-31.4 32-56 66-56Z" fill="#ff8c5a"/>
-          <circle cx="82" cy="66" r="34" fill="#ffb599"/>
-          <circle cx="140" cy="60" r="34" fill="#2ec4b6"/>
-          <circle cx="112" cy="42" r="30" fill="#fff6ea"/>
-          <path d="M60 96h100l-30.5 108a12 12 0 0 1-11.8 9.6h-15.4a12 12 0 0 1-11.8-9.6L60 96Z" fill="#ffecd1" stroke="#f06d3b" stroke-width="3"/>
-          <path d="M66 112h88M70 132h80M75 152h70M80 172h60" stroke="#f06d3b" stroke-width="2" opacity="0.5"/>
-          <circle cx="70" cy="52" r="5" fill="#fff" opacity="0.7"/>
-          <circle cx="128" cy="46" r="4" fill="#fff" opacity="0.6"/>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 340" fill="none">
+          <!-- Vitrine -->
+          <rect x="20" y="150" width="280" height="140" rx="8" fill="#3a413e" stroke="#1e2321" stroke-width="4" />
+          <rect x="20" y="150" width="280" height="34" rx="8" fill="#4a534f" />
+          <path d="M20 184h280" stroke="#1e2321" stroke-width="3" />
+          <!-- Eisbehälter mit Kugeln -->
+          <g>
+            <rect x="40" y="196" width="52" height="42" rx="5" fill="#252b29" />
+            <circle cx="56" cy="204" r="13" fill="#c73a5a" /><circle cx="78" cy="206" r="12" fill="#e0788e" />
+            <rect x="106" y="196" width="52" height="42" rx="5" fill="#252b29" />
+            <circle cx="122" cy="204" r="13" fill="#f2e7cf" /><circle cx="144" cy="206" r="12" fill="#e2cfa4" />
+            <rect x="172" y="196" width="52" height="42" rx="5" fill="#252b29" />
+            <circle cx="188" cy="204" r="13" fill="#8fbf9a" /><circle cx="210" cy="206" r="12" fill="#a8cfae" />
+            <rect x="238" y="196" width="46" height="42" rx="5" fill="#252b29" />
+            <circle cx="252" cy="204" r="13" fill="#5a3a2c" /><circle cx="272" cy="206" r="11" fill="#744c36" />
+          </g>
+          <!-- Schildchen -->
+          <g fill="#f2e7cf">
+            <rect x="44" y="246" width="44" height="14" rx="3" /><rect x="110" y="246" width="44" height="14" rx="3" />
+            <rect x="176" y="246" width="44" height="14" rx="3" /><rect x="242" y="246" width="40" height="14" rx="3" />
+          </g>
+          <!-- Glasscheibe -->
+          <path d="M20 150h280v-24a10 10 0 0 0-10-10H30a10 10 0 0 0-10 10z" fill="#7d9a9a" opacity=".35" stroke="#1e2321" stroke-width="3" />
+
+          <!-- Waffel mit drei Kugeln oben drauf -->
+          <g transform="translate(122,10)">
+            <circle cx="38" cy="46" r="21" fill="#c73a5a" />
+            <circle cx="20" cy="60" r="18" fill="#f2e7cf" />
+            <circle cx="56" cy="60" r="18" fill="#8fbf9a" />
+            <path d="M8 74h60L38 132z" fill="#d9a75c" />
+            <g stroke="#b8863f" stroke-width="1.8">
+              <path d="M18 84l16 16M30 78l20 20M42 78l14 14M20 96l10 10" />
+            </g>
+          </g>
+
+          <!-- Ladenboden -->
+          <rect y="290" width="320" height="14" fill="#1e2321" />
         </svg>
       </div>
     </div>
-    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 40 C 240 90 480 0 720 30 C 960 60 1200 10 1440 45 L1440 90 L0 90 Z" fill="#fffdf9"/>
-    </svg>
   </section>
 
-  <!-- ================= ÜBER UNS ================= -->
-  <section id="ueber-uns" class="about">
-    <div class="container about-grid">
-      <div class="about-art">
-        <svg viewBox="0 0 240 240" aria-hidden="true">
-          <circle cx="120" cy="120" r="110" fill="#ffecd1"/>
-          <circle cx="120" cy="118" r="46" fill="#2ec4b6"/>
-          <circle cx="120" cy="118" r="46" fill="none" stroke="#1a8f84" stroke-width="3" stroke-dasharray="4 8"/>
-          <path d="M74 150c8 20 26 34 46 34s38-14 46-34" fill="none" stroke="#f06d3b" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="96" cy="100" r="7" fill="#fff6ea"/>
-          <circle cx="140" cy="108" r="5" fill="#fff6ea"/>
-          <circle cx="118" cy="90" r="5" fill="#ffb599"/>
-        </svg>
-      </div>
-      <div class="about-text">
-        <span class="eyebrow">Unsere Geschichte</span>
-        <h2 class="section-title">Eis mit Herz und Handwerk</h2>
-        <p>
-          Seit 2001 wird in der Eisdiele in der Kronenstraße im Freiburger
-          Stadtteil Wiehre Eis nach einem über 50 Jahre alten Familienrezept
-          hergestellt. Mario Mariotti hat sein Handwerk an seinen Nachfolger
-          Loris Paniccia weitergegeben, der die Eisdiele heute gemeinsam mit
-          Paula Paniccia führt — italienische Eismacherkunst trifft auf
-          Freiburger Gemütlichkeit.
+  <!-- ================= DIE TAFEL =================
+       Das eigentliche Merkmal dieser Eisdiele: bis zu 24 Sorten, und
+       sie wechseln täglich. Das lässt sich nicht als Liste abbilden —
+       also als Tafel mit vierundzwanzig Feldern, von denen nur die
+       bekannten beschriftet sind. -->
+  <section class="section board" id="tafel">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Bis zu 24 Sorten</p>
+        <h2>Die Tafel wechselt täglich</h2>
+        <p class="section-note">
+          Vierundzwanzig Felder, jeden Tag anders besetzt. Ein paar stehen
+          fast immer da — der Rest hängt davon ab, was am Vortag gut geworden
+          ist. Was heute wirklich drin ist, sagt die Tafel im Laden.
         </p>
-        <p>
-          In Freiburg sagt man: Wenn die Eisdiele in der Kronenstraße öffnet,
-          ist Sommer. Ob als kleine Auszeit zwischendurch oder als fester
-          Programmpunkt bei einem Spaziergang durch die Stadt: Bei uns soll
-          sich jeder Besuch wie ein kleiner Urlaubsmoment anfühlen.
+      </div>
+
+      <div class="chalkboard">
+        <p class="cb-title">Heute im Haus</p>
+        <ol class="cb-grid">
+          <li class="is-known is-star"><span class="cb-no">01</span><span class="cb-name">Cheesecake-Himbeere</span><span class="cb-tag">Hausspezialität</span></li>
+          <li class="is-known"><span class="cb-no">02</span><span class="cb-name">Mango</span></li>
+          <li class="is-known"><span class="cb-no">03</span><span class="cb-name">Zartbitter-Schokolade</span></li>
+          <li class="is-known"><span class="cb-no">04</span><span class="cb-name">Fruchtsorbet, vegan</span><span class="cb-tag">vegan</span></li>
+          <li><span class="cb-no">05</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">06</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">07</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">08</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">09</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">10</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">11</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">12</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">13</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">14</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">15</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">16</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">17</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">18</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">19</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">20</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">21</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">22</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">23</span><span class="cb-name cb-blank">wechselnd</span></li>
+          <li><span class="cb-no">24</span><span class="cb-name cb-blank">wechselnd</span></li>
+        </ol>
+        <p class="cb-foot">
+          Vier Sorten sind aus öffentlichen Angaben belegt. Die übrigen zwanzig
+          bleiben hier absichtlich leer, statt erfunden zu werden — vor einem
+          Launch gehört an diese Stelle die echte Tagesliste.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ================= HIGHLIGHTS ================= -->
-  <section class="highlights">
-    <div class="container">
-      <div class="highlights-header">
-        <span class="eyebrow">Warum wir</span>
-        <h2 class="section-title">Was uns ausmacht</h2>
-        <p class="section-lede">
-          Kleine Dinge, große Wirkung — das macht den Besuch bei uns
-          besonders.
+  <!-- ================= DAS REZEPT ================= -->
+  <section class="section recipe" id="rezept">
+    <div class="wrap recipe-grid">
+      <div>
+        <p class="kicker">Zwei Namen an der Tür</p>
+        <h2>Warum der Laden zwei Nachnamen trägt</h2>
+        <p>
+          „Mariotti bei Paniccia" ist kein Doppelname aus Marketinggründen,
+          sondern eine Übergabe. Mario Mariotti hat sein Handwerk und sein
+          Rezept an Loris Paniccia weitergegeben, der die Eisdiele heute
+          gemeinsam mit Paula Paniccia führt.
+        </p>
+        <p>
+          Das Rezept ist über fünfzig Jahre alt, die Eisdiele in der
+          Kronenstraße gibt es seit 2001. Beides zusammen erklärt, warum das
+          Eis hier nicht nach Trend schmeckt, sondern nach einer bestimmten
+          Handschrift — und warum manche Gäste seit zwanzig Jahren dieselbe
+          Sorte bestellen.
         </p>
       </div>
-      <div class="card-grid">
 
-        <article class="card">
-          <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="32" cy="26" r="18" fill="#ffb599"/>
-            <path d="M20 34l12 22 12-22" fill="none" stroke="#f06d3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="26" cy="20" r="3" fill="#fff6ea"/>
-          </svg>
-          <h3>Hausgemachtes Eis</h3>
-          <p>Nach einem über 50 Jahre alten Familienrezept von Hand zubereitet — Eisgenuss, wie man ihn aus alten Zeiten kennt.</p>
+      <ol class="lineage">
+        <li>
+          <span class="ln-year">vor 50+ Jahren</span>
+          <div><h3>Das Rezept entsteht</h3><p>In der Familie Mariotti — Grundlage für alles, was heute in der Vitrine steht.</p></div>
+        </li>
+        <li>
+          <span class="ln-year">2001</span>
+          <div><h3>Die Kronenstraße</h3><p>Die Eisdiele in der Wiehre öffnet. Mario Mariotti macht das Eis selbst.</p></div>
+        </li>
+        <li>
+          <span class="ln-year">Übergabe</span>
+          <div><h3>Mariotti bei Paniccia</h3><p>Mario Mariotti gibt Handwerk und Rezept an Loris Paniccia weiter.</p></div>
+        </li>
+        <li class="is-now">
+          <span class="ln-year">heute</span>
+          <div><h3>Loris &amp; Paula Paniccia</h3><p>Führen den Laden gemeinsam. Dasselbe Rezept, dieselbe Straße.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= FÜR ALLE ================= -->
+  <section class="section forall" id="alle">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Damit niemand danebensteht</p>
+        <h2>Vegan und glutenfrei, ohne Nachfragen</h2>
+        <p class="section-note">
+          Es gibt Fruchtsorten ohne Milch und ohne Gluten — nicht als
+          Sonderwunsch, sondern als fester Teil der Tafel.
+        </p>
+      </div>
+
+      <div class="forall-grid">
+        <article class="fa-card">
+          <span class="fa-mark" style="--c:#8fbf9a" aria-hidden="true"></span>
+          <h3>Vegane Fruchtsorten</h3>
+          <p>Sorbets aus Frucht, Wasser und Zucker. Kein Ersatzprodukt, sondern die ältere Hälfte der italienischen Eiskultur.</p>
         </article>
-
-        <article class="card">
-          <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="22" cy="26" r="12" fill="#2ec4b6"/>
-            <circle cx="42" cy="22" r="12" fill="#ffb599"/>
-            <circle cx="32" cy="40" r="12" fill="#f06d3b"/>
-          </svg>
-          <h3>Große Sortenvielfalt</h3>
-          <p>Bis zu 24 wechselnde Sorten täglich — von der Hausspezialität Cheesecake-Himbeere über Mango und Zartbitter-Schokolade bis zu veganen, glutenfreien Fruchtsorten.</p>
+        <article class="fa-card">
+          <span class="fa-mark" style="--c:#d9a75c" aria-hidden="true"></span>
+          <h3>Glutenfrei</h3>
+          <p>Die Fruchtsorten enthalten kein Gluten. Für die Waffel gilt das nicht — im Becher ist man auf der sicheren Seite.</p>
         </article>
-
-        <article class="card">
-          <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-            <path d="M32 50s-18-11-18-25a11 11 0 0 1 18-8.4A11 11 0 0 1 50 25c0 14-18 25-18 25Z" fill="#ff8c5a"/>
-          </svg>
-          <h3>Gemütliches Ambiente</h3>
-          <p>Ein Platz zum Verweilen und Wohlfühlen — perfekt für einen entspannten Moment mitten am Tag.</p>
+        <article class="fa-card">
+          <span class="fa-mark" style="--c:#c73a5a" aria-hidden="true"></span>
+          <h3>Fragen lohnt sich</h3>
+          <p>Weil die Tafel täglich wechselt, wechseln auch die veganen Sorten. Wer fragt, bekommt die richtige Auskunft für heute.</p>
         </article>
-
-        <article class="card">
-          <svg class="card-icon" viewBox="0 0 64 64" aria-hidden="true">
-            <path d="M32 6c11 0 20 9 20 20 0 15-20 32-20 32S12 41 12 26C12 15 21 6 32 6Z" fill="#2ec4b6"/>
-            <circle cx="32" cy="26" r="8" fill="#fff6ea"/>
-          </svg>
-          <h3>Mitten in Freiburg</h3>
-          <p>Zentral in der Kronenstraße gelegen — gut zu erreichen für einen spontanen Eisbesuch.</p>
-        </article>
-
       </div>
     </div>
   </section>
 
-  <!-- ================= STANDORT & KONTAKT ================= -->
-  <section id="kontakt" class="contact">
-    <div class="container">
-      <span class="eyebrow">Vorbeikommen</span>
-      <h2 class="section-title">Standort &amp; Kontakt</h2>
-      <p class="section-lede" style="color:rgba(255,246,234,0.85);">
-        Wir freuen uns auf Ihren Besuch — schreiben Sie uns oder schauen Sie
-        einfach vorbei.
-      </p>
+  <!-- ================= VORBEIKOMMEN ================= -->
+  <section class="section contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Vorbeikommen</p>
+        <h2>Kronenstraße 9</h2>
+        <p class="section-note">
+          In der Wiehre, gut zu Fuß und mit dem Rad zu erreichen. Im Sommer
+          steht die Schlange manchmal bis zur Ecke — das geht schneller, als es
+          aussieht.
+        </p>
 
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Adresse</h3>
-          <div class="contact-line">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
-            <span>Eisdiele Mariotti bei Paniccia<br>Kronenstraße 9<br>Freiburg im Breisgau</span>
-          </div>
-          <div class="contact-line">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <span>Öffnungszeiten: täglich ca. 10:00–22:00 Uhr<br><em class="placeholder-note">Saisonal geöffnet (meist Frühjahr bis Herbst) — Angaben aus Online-Verzeichnissen, bitte ggf. telefonisch bestätigen.</em></span>
-          </div>
-          <a href="https://www.google.com/maps/search/?api=1&query=Kronenstra%C3%9Fe%209%2C%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener" class="btn btn-outline">Route in Google Maps</a>
-        </div>
-
-        <div class="contact-card">
-          <h3>Kontakt</h3>
-          <div class="contact-line">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.9 21 3 12.1 3 1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-            <span>Telefon: <a href="tel:+497617075061">0761 7075061</a></span>
-          </div>
-          <div class="contact-line">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>info@eisdiele-mariotti.de <br><em class="placeholder-note">(Platzhalter-Adresse)</em></span>
-          </div>
-          <p style="color:rgba(255,246,234,0.8); font-size:0.95rem;">
-            Für Fragen, Feedback oder Reservierungsanfragen einfach anrufen
-            oder eine kurze Nachricht schreiben.
-          </p>
-          <div class="contact-actions">
-            <a href="tel:+497617075061" class="btn btn-primary">Anrufen</a>
-            <a href="mailto:info@eisdiele-mariotti.de" class="btn btn-outline">E-Mail schreiben</a>
-          </div>
+        <div class="contact-links">
+          <a class="contact-link" href="tel:+497617075061">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5c.6-.6 1.6-.6 2.2 0l1.6 1.6c.5.5.6 1.3.2 1.9l-1 1.5c-.3.4-.3.9 0 1.3 1 1.4 2.3 2.7 3.7 3.7.4.3.9.3 1.3 0l1.5-1c.6-.4 1.4-.3 1.9.2l1.6 1.6c.6.6.6 1.6 0 2.2l-1 1c-.7.7-1.8 1-2.8.7-3-.9-5.7-2.6-7.9-4.8-2.2-2.2-3.9-4.9-4.8-7.9-.3-1 0-2.1.7-2.8l1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span><strong>0761 7075061</strong><span>Für Fragen zur Tafel und zur Saison</span></span>
+          </a>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kronenstra%C3%9Fe%209%2C%2079100%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c-5-5-8-8.6-8-12a8 8 0 0 1 16 0c0 3.4-3 7-8 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span><strong>Kronenstraße 9</strong><span>Freiburg im Breisgau (Wiehre) · Route planen</span></span>
+          </a>
         </div>
       </div>
+
+      <aside class="season-card">
+        <h3>Saison &amp; Zeiten</h3>
+        <p class="sc-hours">täglich etwa <strong>10:00 – 22:00</strong></p>
+        <p>
+          Die Eisdiele ist saisonal geöffnet, meist von Frühjahr bis Herbst.
+          Im Winter bleibt die Tür zu — und wenn sie wieder aufgeht, ist das in
+          der Wiehre eine Nachricht.
+        </p>
+        <p class="sc-note">
+          Angaben aus Online-Verzeichnissen und deshalb ungefähr. Vor einem
+          Besuch am Saisonrand lohnt der Anruf. <strong>Vor dem Launch:</strong>
+          genaue Zeiten, Saisonstart und eine echte E-Mail-Adresse ergänzen.
+        </p>
+      </aside>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <strong>© 2026 Eisdiele Mariotti bei Paniccia</strong>
-    <span class="draft-note">Website-Entwurf — erstellt als Vorschlag für einen möglichen neuen Webauftritt.</span>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Eisdiele Mariotti bei Paniccia</span>
+      <p>Kronenstraße 9 · Freiburg-Wiehre · seit 2001<br />Bis zu 24 wechselnde Sorten nach einem über 50 Jahre alten Familienrezept.</p>
+    </div>
+    <nav class="footer-links" aria-label="Fußzeile">
+      <a href="#tafel">Die Tafel</a>
+      <a href="#rezept">Das Rezept</a>
+      <a href="#alle">Vegan &amp; glutenfrei</a>
+      <a href="tel:+497617075061">0761 7075061</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Eisdiele Mariotti bei Paniccia</span>
+    <span class="footer-note">Website-Entwurf als Vorschlag für einen möglichen neuen Webauftritt. Angaben aus öffentlichen Quellen; Impressum und Datenschutzerklärung fehlen und sind vor einem echten Launch Pflicht.</span>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
